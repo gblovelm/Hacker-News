@@ -1,6 +1,19 @@
 # vue-hackernews-2.0
 
-HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.
+HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side rendering, courtesy of Mr. E. You.
+
+This application is used here as a platform to experiment with different types of testing and try out a CI pipeline on this github repository. Reference for this process is a Medium article by Liron Navron on testing Vue.js applications
+
+## Test Types
+1. Unit tests with Jest
+2. Snapshot tests with Jest
+3. Running both predefined and screen-recorded E2E tests with Test Cafe
+4. Configuring a CI pipeline to run all the above tests on each 'git push' from a local repository
+
+Jest also configured to output code coverage so improvements can be monitored as tests are added to the test suite.
+E2E tests can be run on both standard and headless versions of browsers. The headless versions have a significant speed advantage - important for large test suites.
+
+--------------------------------------------------------------------------------------------------------
 
 <p align="center">
   <a href="https://vue-hn.herokuapp.com" target="_blank">
@@ -10,7 +23,7 @@ HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side render
   </a>
 </p>
 
-## Features
+## Hackernews Features
 
 > Note: in practice, it is unnecessary to code-split for an app of this size (where each async chunk is only a few kilobytes), nor is it optimal to extract an extra CSS file (which is only 1kb) -- they are used simply because this is a demo app showcasing all the supported features.
 
